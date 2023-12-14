@@ -3,9 +3,11 @@ body {
     line-height: 1.5;
 }
 
-h1 h2 h3 {
+h1,
+h2,
+h3 {
     text-transform: uppercase;
-    line-height: 0.5px;
+    letter-spacing: 0.5px;
 }
 
 a {
@@ -36,21 +38,21 @@ ul {
     list-style-type: none;
     padding-left: 0;
     margin: 0;
+    gap: 30px;
 }
 
-ul>li {
-    margin-right: 30px;
-}
 
 ul>li:last-child {
     margin-right: 0;
 }
 
 .link {
+    display: block;
     background-color: rebeccapurple;
     color: white;
     padding: 8px 15px;
-    margin-left: 10px;
+    text-align: center;
+    margin-top: 10px;
 }
 
 .box {
@@ -63,6 +65,11 @@ ul>li:last-child {
 .aside {
     background-color: lavender;
     padding: 10px 20px;
+}
+
+.results {
+    display: flex;
+    gap: 10px;
 }
 
 section {
